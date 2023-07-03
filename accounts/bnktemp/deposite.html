@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>deposite</title>
+</head>
+   <style>
+    .sb { padding: 8px 10px;
+        background-color: gold;
+        color: red;
+        font-family: Arial;
+        font-size: 12px;
+        font-style: italic;
+        
+        border: none;
+        border-radius: 4px;
+    
+
+
+    }
+    body{
+        background-color: bisque;
+    }
+    h2{
+        background-color: cornsilk;
+        font-size: 25px;
+        font-family: Arial;
+        padding: 12px 14px;
+        margin: 20px 70px;
+    }
+
+    </style>
+<body><center><h2>Fokat Bank Deposite</h2></center>
+    <!-- {{accounts}} -->
+    <form >
+        <center>
+            Account No.<input type="number"   value="{{accountno}}" name="accountno" required>  <input type="submit" class="sb"><br><br>
+            Deposite   <input type="number"  value="{{deposite}}" name="deposite"><br><br>
+            Name       <input value="{{name}}"><br><br>
+            Available Balance <input value="{{balance}}" ><br><br>
+            <h3>{{re}}</h3>
+        </center>
+        
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+</head>
+<style>
+    .sb {
+        padding: 10px 12px;
+        background-color: gold;
+        color: black;
+        font-family: Arial;
+        font-size: 16px;
+        border: none;
+        border-radius: 8px;
+        padding: 10px 12px;
+
+
+    }
+
+    body {
+        background-color: bisque;
+    }
+
+    h2 {
+        background-color: cornsilk;
+        font-size: 25px;
+        font-family: Arial;
+        padding: 12px 14px;
+        margin: 20px 70px;
+    }
+</style>
+
+<body>
+    <center>
+        <h1>Fokat Bank</h1>
+    </center>
+    <form>
+        <center>
+            <a href="/yono/deposite" class="btn btn-success">deposite money</a>
+            <br>
+            <a href="/yono/bank" class="btn btn-success">bank</a>
+            <br>
+            <a href="/yono/withdraw" class="btn btn-success">withdraw</a>
+            <br>
+
+            
+        </center>
+    </form>
+    <a href="/yono/bank" class="btn btn-success">Add New Record</a>
+
+
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bank</title>
+</head>
+<style>
+    .sb {
+        padding: 10px 12px;
+        background-color: gold;
+        color: black;
+        font-family: Arial;
+        font-size: 16px;
+        border: none;
+        border-radius: 8px;
+        padding: 10px 12px;
+
+
+    }
+
+    body {
+        background-color: bisque;
+    }
+
+    h2 {
+        background-color: cornsilk;
+        font-size: 25px;
+        font-family: Arial;
+        padding: 12px 14px;
+        margin: 20px 70px;
+    }
+</style>
+
+<body>
+    <center>
+        <h2>Fokat Bank</h2>
+    </center>
+    <form>
+        <center>
+            Account No.<input type="number" value="{{an}}" name="accountno" required><br><br>
+            Name <input type="text" value="{{n}}" name="name"><br><br>
+            Balance <input type="number" value="{{b}}" name="balance"><br><br>
+            <input type="submit" class="sb">
+            <h3>{{re}}</h3><br><br>
+            <a target="_blank" href="/bank" class="btn btn-success">Open an Account</a> 
+            
+        </center>
+    </form>
+
+</body>
+
+</html>
