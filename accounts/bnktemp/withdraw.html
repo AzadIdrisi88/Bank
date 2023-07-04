@@ -6,16 +6,16 @@
     <title>withdraw</title>
 </head>
    <style>
-    .sb { padding: 8px 10px;
+    .sb {
+        padding: 10px 12px;
         background-color: gold;
-        color: red;
+        color: black;
         font-family: Arial;
-        font-size: 12px;
-        font-style: italic;
-        
+        font-size: 16px;
         border: none;
-        border-radius: 4px;
-    
+        border-radius: 8px;
+        padding: 10px 12px;
+
 
 
     }
@@ -29,17 +29,52 @@
         padding: 12px 14px;
         margin: 20px 70px;
     }
+    .cdiv
+    {
+       background-color: black; 
+       overflow: hidden;
 
-    </style>
+    } 
+    .cdiv a
+    {
+      padding: 18px 46px;
+      display: block;
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      float: left;
+
+
+    }
+    .cdiv a:hover{
+        background-color: #4CAF50;
+        color: black;
+    }
+    .a1
+    {   background-color: #4CAF50;
+        text-decoration: none;
+        padding: 10px 16px;
+        border-radius: 8px;
+        font-family: Arial;
+        color: #000;
+    }
+</style>
 <body><center><h2>Fokat Bank Withdraw</h2></center>
     <!-- {{accounts}} -->
     <form >
         <center>
-            Account No.<input type="number" value="{{accountno}}" name="accountno">  <input type="submit" class="sb"><br><br>
+            Account No.<input type="number" value="{{accountno}}" name="accountno"> <br><br>
             Withdraw   <input type="number" value="{{withdraw}}" name="withdraw"><br><br>
             Name       <input value="{{name}}"><br><br>
             Available Balance <input value="{{balance}}" ><br><br>
+            <input type="submit" class="sb">  <a href="/withdraw" class="a1">Refresh</a>
             <h3>{{re}}</h3>
+            <div class="cdiv">
+                <a href="/">Home</a>
+                <a href="/bank">Open an Account</a>
+                <a href="/deposite">Deposite Money</a>
+                <a href="/details">Details</a>
+             </div>
         </center>
     </form>
     

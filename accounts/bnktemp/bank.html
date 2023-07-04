@@ -88,6 +88,35 @@
         padding: 12px 14px;
         margin: 20px 70px;
     }
+    .cdiv
+    {
+       background-color: black; 
+       overflow: hidden;
+
+    } 
+    .cdiv a
+    {
+      padding: 18px 46px;
+      display: block;
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      float: left;
+
+
+    }
+    .cdiv a:hover{
+        background-color: #4CAF50;
+        color: black;
+    }
+    .a1
+    {   background-color: #4CAF50;
+        text-decoration: none;
+        padding: 10px 16px;
+        border-radius: 8px;
+        font-family: Arial;
+        color: #000;
+    }
 </style>
 
 <body>
@@ -99,10 +128,14 @@
             Account No.<input type="number" value="{{an}}" name="accountno" required><br><br>
             Name <input type="text" value="{{n}}" name="name"><br><br>
             Balance <input type="number" value="{{b}}" name="balance"><br><br>
-            <input type="submit" class="sb">
+            <input type="submit" class="sb">  <a href="/bank" class="a1">Refresh</a>
             <h3>{{re}}</h3><br><br>
-            <a target="_blank" href="/bank" class="btn btn-success">Open an Account</a> 
-            
+             <div class="cdiv">
+                <a href="/">Home</a>
+                <a href="/deposite">Deposite Money</a>
+                <a href="/withdraw">Withdraw Money</a>
+                <a href="/details">Details</a>
+             </div>
         </center>
     </form>
 

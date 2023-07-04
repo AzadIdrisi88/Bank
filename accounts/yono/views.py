@@ -94,16 +94,20 @@ def withdraw(request):
     if request.GET:
         accountno=request.GET['accountno']
         withdraw=int(request.GET['withdraw'])
+       
         account=bankModel.objects.filter(accountno=accountno)
         if len(account)<=0:
             result="Account not exist"
         else:
             account=account[0]
-            account.balance -= withdraw
-            account.save()
-            balance=account.balance
-            name=account.name
-            result='Amount Dedacted'
+            if account.balance< withdraw:
+                result='Insufficient Balance'
+            else:
+                account.balance -= withdraw
+                account.save()
+                balance=account.balance
+                name=account.name
+                result='Amount Dedacted'
     return render(request,'withdraw.html',{'accountno':accountno,'withdraw':withdraw,"re":result,'balance':balance,'name':name})    
 
 
