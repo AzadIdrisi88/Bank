@@ -2,8 +2,8 @@ from django.shortcuts import render,HttpResponse,redirect
 from.models import bankModel
 
 # Create your views here.
-def display(request):
-    return render(request,'display.html')
+def index(request):
+    return render(request,'index.html')
 
 
 def bank(request):
