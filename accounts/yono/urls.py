@@ -9,5 +9,5 @@ urlpatterns = [
     path('details/',views.details),
     path('deposite/',views.deposite),
     path('withdraw/',views.withdraw),
-    
+    path('bankdetail/',views.bankdetail),
 ]
